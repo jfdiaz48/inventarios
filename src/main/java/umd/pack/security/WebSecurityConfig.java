@@ -16,10 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import lombok.AllArgsConstructor;
-
 @Configuration
-@AllArgsConstructor
 public class WebSecurityConfig {
 
 	@Autowired
@@ -28,7 +25,7 @@ public class WebSecurityConfig {
 	@Autowired
 	private JwtAuthorizationFilter jwtAuthorizationFilter;
 
-	private static final Logger logger = LoggerFactory.getLogger(AllArgsConstructor.class);
+	private static final Logger logger = LoggerFactory.getLogger(WebSecurityConfig.class);
 
 	@Bean
 	SecurityFilterChain filterChain(HttpSecurity http, AuthenticationManager authManager) throws Exception {

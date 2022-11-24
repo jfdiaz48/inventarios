@@ -1,8 +1,6 @@
 package umd.pack.security;
 
-import lombok.Data;
 
-@Data
 public class AuthCredentials {
 
 	private String email;
